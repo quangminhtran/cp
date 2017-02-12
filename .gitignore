@@ -1,5 +1,11 @@
+*
+!*/
+!*.*
 # Prerequisites
 *.d
+
+# swap files
+*.swp
 
 # Object files
 *.o
