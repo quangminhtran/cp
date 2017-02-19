@@ -31,7 +31,7 @@ bool place(int r, int c) {
 
 void backtrack(int c) {
 	if (c == 8) {	// Found a solution
-		printf("%2d		%d", ++lineCounter, row[0] + 1);	// Switch to 1-based indexing in the output
+		printf("%2d      %d", ++lineCounter, row[0] + 1);	// Switch to 1-based indexing in the output
 		for (int j = 1; j < 8; j++) 
 			printf(" %d", row[j] + 1);
 		printf("\n");
@@ -53,8 +53,8 @@ int main() {
 		a--;b--; // switch to 0-based indexing
 		memset(row, 0, sizeof row); 
 		lineCounter = 0;
-		printf("SOLN		COLUMN\n");	
-		printf(" #		1 2 3 4 5 6 7 8\n\n");
+		printf("SOLN       COLUMN\n");	
+		printf(" #      1 2 3 4 5 6 7 8\n\n");
 		backtrack(0);
 		if (TC) printf("\n");	// Space between test cases except the last test case
 	}
